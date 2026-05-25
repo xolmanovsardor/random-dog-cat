@@ -10,7 +10,7 @@ class DogClient:
         self.token = TOKEN
 
     def get_random_dog(self) -> str:
-        url = f"{self.base_url}/v1/images/search?limit=2"
+        url = f"{self.base_url}/v1/images/search"
         headers = {
             'x-api-key': self.token
         }
